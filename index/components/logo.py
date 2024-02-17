@@ -4,8 +4,8 @@ from index.styles.styles import Size as Size
 
 
 def logo(alt: str, img: str, url: str) -> rx.Component:
-    return rx.link(
-        rx.image(
+    return rx.chakra.link(
+        rx.chakra.image(
             src=img,
             alt=alt,
             style=[

@@ -5,21 +5,21 @@ from index.styles.colors import Color as Color
 
 
 def navbar() -> rx.Component:
-    return rx.flex(
-        rx.menu(
-            rx.menu_button(
+    return rx.chakra.flex(
+        rx.chakra.menu(
+            rx.chakra.menu_button(
                 "Home",
                 style=styles.navbar_menu_button_style,
             ),
-            rx.menu_button(
+            rx.chakra.menu_button(
                 "Acerca de",
                 style=styles.navbar_menu_button_style,
             ),
-            rx.menu_button(
+            rx.chakra.menu_button(
                 "Servicios",
                 style=styles.navbar_menu_button_style,
             ),
-            rx.menu_button(
+            rx.chakra.menu_button(
                 "Contacto",
                 style=styles.navbar_menu_button_style,
             ),

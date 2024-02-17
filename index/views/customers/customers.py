@@ -5,9 +5,9 @@ import index.constants as constants
 
 
 def customers() -> rx.Component:
-    return rx.vstack(
-        rx.hstack(
-            rx.heading(
+    return rx.chakra.vstack(
+        rx.chakra.hstack(
+            rx.chakra.heading(
                 constants.CUSTOMER_TITLE,
                 size="lg",
                 color="white",
@@ -18,9 +18,9 @@ def customers() -> rx.Component:
             ),
             style=styles.section_title_style,
         ),
-        rx.vstack(
-            rx.flex(
-                rx.flex(
+        rx.chakra.vstack(
+            rx.chakra.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_1,
                         img=constants.IMAGE_CLIENT_1,
@@ -32,7 +32,7 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
-                rx.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_2,
                         img=constants.IMAGE_CLIENT_2,
@@ -44,7 +44,7 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
-                rx.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_3,
                         img=constants.IMAGE_CLIENT_3,
@@ -56,7 +56,7 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
-                rx.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_4,
                         img=constants.IMAGE_CLIENT_4,
@@ -68,7 +68,7 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
-                rx.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_5,
                         img=constants.IMAGE_CLIENT_5,
@@ -81,8 +81,8 @@ def customers() -> rx.Component:
                     ],
                 ),
             ),
-            rx.flex(
-                rx.flex(
+            rx.chakra.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_6,
                         img=constants.IMAGE_CLIENT_6,
@@ -94,7 +94,7 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
-                rx.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_7,
                         img=constants.IMAGE_CLIENT_7,
@@ -106,7 +106,7 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
-                rx.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_8,
                         img=constants.IMAGE_CLIENT_8,
@@ -118,7 +118,7 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
-                rx.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_9,
                         img=constants.IMAGE_CLIENT_9,
@@ -130,7 +130,7 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
-                rx.flex(
+                rx.chakra.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_10,
                         img=constants.IMAGE_CLIENT_10,

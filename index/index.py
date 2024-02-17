@@ -13,12 +13,12 @@ from index.styles.colors import Color
 
 
 def index() -> rx.Component:
-    return rx.vstack(
+    return rx.chakra.vstack(
         header(),
         hero(),
         main(),
-        # rx.center(
-        #     rx.vstack(
+        # rx.chakra.center(
+        #     rx.chakra.vstack(
         #         header(),
         #         max_width=styles.MAX_WIDTH,
         #         width="100%",

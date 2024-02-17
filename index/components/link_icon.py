@@ -3,8 +3,8 @@ from index.styles.styles import Size as Size
 
 
 def link_icon(image: str, url: str, alt: str) -> rx.Component:
-    return rx.link(
-        rx.image(
+    return rx.chakra.link(
+        rx.chakra.image(
             src=image,
             width=Size.LARGE.value,
             alt=alt,

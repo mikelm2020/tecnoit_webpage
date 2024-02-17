@@ -21,10 +21,10 @@ def header() -> rx.Component:
         A Reflex component that represents the header of the website.
 
     """
-    return rx.hstack(
-        rx.flex(
+    return rx.chakra.hstack(
+        rx.chakra.flex(
             logo("Logo de la empresa Tecnoit", "logo.png", "http://localhost:3000/"),
-            rx.spacer(),
+            rx.chakra.spacer(),
             navbar(),
             style=[
                 styles.container_style,

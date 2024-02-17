@@ -4,16 +4,16 @@ import index.constants as constants
 
 
 def services() -> rx.Component:
-    return rx.hstack(
-        rx.vstack(
-            rx.vstack(
-                rx.heading(
+    return rx.chakra.hstack(
+        rx.chakra.vstack(
+            rx.chakra.vstack(
+                rx.chakra.heading(
                     constants.SERVICES_TITLE,
                     size="lg",
                     color="white",
                     style=styles.h2_section_title_text_style,
                 ),
-                rx.text(
+                rx.chakra.text(
                     constants.SERVICES_CONTENT,
                     style=[
                         styles.parragraph_text_style,
@@ -22,18 +22,18 @@ def services() -> rx.Component:
                 ),
                 style=styles.section_title_style,
             ),
-            rx.flex(
-                rx.flex(
-                    rx.vstack(
-                        rx.vstack(
-                            rx.icon(
+            rx.chakra.flex(
+                rx.chakra.flex(
+                    rx.chakra.vstack(
+                        rx.chakra.vstack(
+                            rx.chakra.icon(
                                 tag="plus_square",
                                 style=styles.sevice_icon_style,
                             ),
                             style=styles.service_icon_container_style,
                         ),
-                        rx.heading(
-                            rx.link(
+                        rx.chakra.heading(
+                            rx.chakra.link(
                                 constants.SERVICE_1_NAME,
                                 href="#",
                                 style=styles.link_style,
@@ -41,7 +41,7 @@ def services() -> rx.Component:
                             as_="h4",
                             style=styles.h4_style,
                         ),
-                        rx.text(
+                        rx.chakra.text(
                             constants.SERVICE_1_DESCRIPTION,
                             style=[
                                 styles.parragraph_text_style,
@@ -56,17 +56,17 @@ def services() -> rx.Component:
                         styles.align_items_stretch_style,
                     ],
                 ),
-                rx.flex(
-                    rx.vstack(
-                        rx.vstack(
-                            rx.icon(
+                rx.chakra.flex(
+                    rx.chakra.vstack(
+                        rx.chakra.vstack(
+                            rx.chakra.icon(
                                 tag="plus_square",
                                 style=styles.sevice_icon_style,
                             ),
                             style=styles.service_icon_container_style,
                         ),
-                        rx.heading(
-                            rx.link(
+                        rx.chakra.heading(
+                            rx.chakra.link(
                                 constants.SERVICE_2_NAME,
                                 href="#",
                                 style=styles.link_style,
@@ -74,7 +74,7 @@ def services() -> rx.Component:
                             as_="h4",
                             style=styles.h4_style,
                         ),
-                        rx.text(
+                        rx.chakra.text(
                             constants.SERVICE_2_DESCRIPTION,
                             style=[
                                 styles.parragraph_text_style,
@@ -91,17 +91,17 @@ def services() -> rx.Component:
                         styles.mt_md_0_style,
                     ],
                 ),
-                rx.flex(
-                    rx.vstack(
-                        rx.vstack(
-                            rx.icon(
+                rx.chakra.flex(
+                    rx.chakra.vstack(
+                        rx.chakra.vstack(
+                            rx.chakra.icon(
                                 tag="plus_square",
                                 style=styles.sevice_icon_style,
                             ),
                             style=styles.service_icon_container_style,
                         ),
-                        rx.heading(
-                            rx.link(
+                        rx.chakra.heading(
+                            rx.chakra.link(
                                 constants.SERVICE_3_NAME,
                                 href="#",
                                 style=styles.link_style,
@@ -109,7 +109,7 @@ def services() -> rx.Component:
                             as_="h4",
                             style=styles.h4_style,
                         ),
-                        rx.text(
+                        rx.chakra.text(
                             constants.SERVICE_3_DESCRIPTION,
                             style=[
                                 styles.parragraph_text_style,
@@ -126,17 +126,17 @@ def services() -> rx.Component:
                         styles.mt_xl_0_style,
                     ],
                 ),
-                rx.flex(
-                    rx.vstack(
-                        rx.vstack(
-                            rx.icon(
+                rx.chakra.flex(
+                    rx.chakra.vstack(
+                        rx.chakra.vstack(
+                            rx.chakra.icon(
                                 tag="plus_square",
                                 style=styles.sevice_icon_style,
                             ),
                             style=styles.service_icon_container_style,
                         ),
-                        rx.heading(
-                            rx.link(
+                        rx.chakra.heading(
+                            rx.chakra.link(
                                 constants.SERVICE_4_NAME,
                                 href="#",
                                 style=styles.link_style,
@@ -144,7 +144,7 @@ def services() -> rx.Component:
                             as_="h4",
                             style=styles.h4_style,
                         ),
-                        rx.text(
+                        rx.chakra.text(
                             constants.SERVICE_4_DESCRIPTION,
                             style=[
                                 styles.parragraph_text_style,

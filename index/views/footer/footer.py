@@ -6,20 +6,20 @@ from index.styles.colors import TextColor as TextColor
 
 
 def footer() -> rx.Component:
-    return rx.vstack(
-        rx.image(
+    return rx.chakra.vstack(
+        rx.chakra.image(
             src="logo.png",
             height=Size.VERY_BIG.value,
             weight=Size.VERY_BIG.value,
             alt='Logotipo de MoureDev. Una "eme" entre llaves.',
         ),
-        rx.link(
+        rx.chakra.link(
             f"© 2014-{datetime.date.today().year} MoureDev by Brais Moure v3.",
             href=const.MOUREDEV_URL,
             is_external=True,
             font_size=Size.MEDIUM.value,
         ),
-        rx.text(
+        rx.chakra.text(
             "BUILDING SOFTWARE WITH ♥ FROM GALICIA TO THE WORLD.",
             font_size=Size.MEDIUM.value,
             margin_top=Size.ZERO.value,

@@ -5,11 +5,11 @@ import index.constants as constants
 
 
 def hero() -> rx.Component:
-    return rx.flex(
-        rx.hstack(
-            rx.flex(
-                rx.flex(
-                    rx.heading(
+    return rx.chakra.flex(
+        rx.chakra.hstack(
+            rx.chakra.flex(
+                rx.chakra.flex(
+                    rx.chakra.heading(
                         constants.HERO_TITLE,
                         as_="h1",
                         style=[
@@ -17,7 +17,7 @@ def hero() -> rx.Component:
                             styles.h1_hero_style,
                         ],
                     ),
-                    rx.heading(
+                    rx.chakra.heading(
                         constants.HERO_SUBTITLE,
                         style=[
                             styles.h2_style,
@@ -35,7 +35,7 @@ def hero() -> rx.Component:
                         styles.order_1_style,
                     ],
                 ),
-                rx.hstack(
+                rx.chakra.hstack(
                     hero_image(
                         alt="imagen con computadoras que demuestran tecnología",
                         img="img/hero-img.png",

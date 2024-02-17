@@ -4,7 +4,7 @@ from index.styles.styles import Size as Size
 
 
 def hero_image(alt: str, img: str) -> rx.Component:
-    return rx.image(
+    return rx.chakra.image(
         src=img,
         alt=alt,
         style=[

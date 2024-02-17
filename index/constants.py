@@ -113,3 +113,7 @@ ASK_ITEM_10 = "Non consectetur a erat nam at lectus urna duis?"
 ANSWER_ITEM_10 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
 ASK_ITEM_11 = "Non consectetur a erat nam at lectus urna duis?"
 ANSWER_ITEM_11 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+
+# Contact
+CONTACT_TITLE = "Contacto"
+CONTACT_CONTENT = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
