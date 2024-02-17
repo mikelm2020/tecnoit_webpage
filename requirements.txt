@@ -33,7 +33,7 @@ python-engineio==4.8.0
 python-multipart==0.0.5
 python-socketio==5.10.0
 redis==4.6.0
-reflex==0.3.9
+reflex==0.3.10
 reflex-hosting-cli==0.1.4
 requests==2.31.0
 rich==13.7.0

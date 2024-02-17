@@ -3,7 +3,7 @@ from enum import Enum
 from .colors import Color as Color
 from .colors import BackGroundColor as BackGroundColor
 from .colors import TextColor as TextColor
-from .fonts import Font as Font, FontWeight, FontStyle, FontSize
+from .fonts import Font as Font, FontWeight, FontStyle, FontSize, FontVariant
 
 # Constants
 MAX_WIDTH = "600px"
@@ -21,9 +21,9 @@ class Size(Enum):
 
 
 STYLESHEETS = [
-    "hhtps://fonts.googleapis.com/css2?family=Open+Sans:wght@300;300i;400;400i;600;600i;700;700i&display=swap",
-    "hhtps://fonts.googleapis.com/css2?family=Jost:wght@300;300i;400;400i;500;500i;600;600i;700;700i&display=swap",
-    "hhtps://fonts.googleapis.com/css2?family=Poppins:wght@300;300i;400;400i;500;500i;600;600i;700;700i&display=swap",
+    "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;300i;400;400i;600;600i;700;700i&display=swap",
+    "https://fonts.googleapis.com/css2?family=Jost:wght@300;300i;400;400i;500;500i;600;600i;700;700i&display=swap",
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@300;300i;400;400i;500;500i;600;600i;700;700i&display=swap",
     # "css/style.css",
     "vendor/aos/aos.css",
     "vendor/bootstrap/css/bootstrap.min.css",
@@ -45,7 +45,7 @@ BASE_STYLE = {
         "_hover": {
             "background_color": Color.SECONDARY.value,
         },
-        "active_color": Color.SECONDARY.value,
+        "active_color": Color.PRIMARY.value,
     },
     # rx.Heading: {
     #     "size": "lg",
@@ -344,11 +344,11 @@ col_2_style = dict(
 col_4_style = dict(
     flex="0 0 auto",
     width=[
-        "10%",
-        "10%",
-        "10%",
-        "10%",
-        "10%",
+        "20%",
+        "20%",
+        "20%",
+        "20%",
+        "20%",
     ],
 )
 
@@ -496,4 +496,49 @@ mt_md_0_style = dict(
 
 mt_xl_0_style = dict(
     margin_top="0!important",
+)
+
+faq_list_style = dict(
+    padding="0 100px",
+)
+
+faq_list_icon = dict(
+    font_size=FontSize.REGULAR.value,
+    position="absolute",
+    right="0",
+    left="0",
+)
+
+bx_style = dict(
+    font_family=Font.ICON.value,
+    font_size=FontSize.REGULAR.value,
+    font_weight=FontWeight.REGULAR.value,
+    font_style=FontStyle.NORMAL.value,
+    font_variant=FontVariant.NORMAL.value,
+    line_height="1",
+    text_rendering="auto",
+    display="inline-block",
+    text_transform="none",
+    speak="none",
+    color=Color.ICON.value,
+)
+
+link_faq_list_style = dict(
+    display="block",
+    position="relative",
+    font_family=Font.LINK.value,
+    font_size=FontSize.SMALL.value,
+    line_height="24px",
+    font_weight=FontWeight.MEDIUM.value,
+    padding="0 30px",
+    outline="none",
+    cursor="pointer",
+)
+
+icon_show_style = dict(
+    display="inline-block",
+    font_size=FontSize.REGULAR.value,
+    position="absolute",
+    rigth="0",
+    top="0",
 )

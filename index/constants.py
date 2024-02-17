@@ -58,6 +58,8 @@ ALT_CLIENT_8 = "Logo de la empresa Skymex"
 ALT_CLIENT_9 = "Logo de la empresa Unidad de Mastología de Alta Especialidad Lindavista"
 ALT_CLIENT_10 = "Logo de la empresa Virisuper"
 
+CUSTOMER_TITLE = "Nuestros Clientes"
+
 # About
 ABOUT_TITLE = "Acerca de nosotros"
 ABOUT_CONTENT_LEFT_COLUMN = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -85,3 +87,29 @@ SERVICE_3_DESCRIPTION = (
 SERVICE_4_DESCRIPTION = (
     "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"
 )
+
+# FAQ Preguntas Fecuentes
+FAQ_TITLE = "Preguntas Frecuentes"
+FAQ_CONTENT = "Estas son las preguntas frecuentes"
+ASK_ITEM_1 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_1 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_2 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_2 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_3 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_3 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_4 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_4 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_5 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_5 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_6 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_6 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_7 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_7 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_8 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_8 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_9 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_9 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_10 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_10 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+ASK_ITEM_11 = "Non consectetur a erat nam at lectus urna duis?"
+ANSWER_ITEM_11 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."

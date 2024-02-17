@@ -7,6 +7,8 @@ class Color(Enum):
     BACKGROUND = "black"
     # BACKGROUND = "#000"
     CONTENT = "#171F26"
+    ICON = "#47b2e4"
+    COLLAPSED = "#37517e"
 
 
 class TextColor(Enum):

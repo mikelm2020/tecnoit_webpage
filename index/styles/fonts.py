@@ -7,6 +7,8 @@ class Font(Enum):
     LOGO = "Comfortaa"
     HERO = ["Jost", "sans-serif"]
     SECTION_TITLE = ["Jost", "sans-serif"]
+    ICON = "boxIcons!Important"
+    LINK = "Poppins"
 
 
 class FontWeight(Enum):
@@ -27,3 +29,8 @@ class FontSize(Enum):
     MEDIUM = "32px"
     REGULAR = "24px"
     NORMAL = "20px"
+    SMALL = "16px"
+
+
+class FontVariant(Enum):
+    NORMAL = "normal"

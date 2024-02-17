@@ -5,8 +5,20 @@ import index.constants as constants
 
 
 def customers() -> rx.Component:
-    return rx.hstack(
+    return rx.vstack(
         rx.hstack(
+            rx.heading(
+                constants.CUSTOMER_TITLE,
+                size="lg",
+                color="white",
+                style=[
+                    styles.h2_style,
+                    styles.h2_section_title_text_style,
+                ],
+            ),
+            style=styles.section_title_style,
+        ),
+        rx.vstack(
             rx.flex(
                 rx.flex(
                     client_image(
@@ -68,6 +80,8 @@ def customers() -> rx.Component:
                         styles.justify_content_center_style,
                     ],
                 ),
+            ),
+            rx.flex(
                 rx.flex(
                     client_image(
                         alt=constants.ALT_CLIENT_6,
