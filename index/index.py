@@ -1,24 +1,22 @@
 import reflex as rx
-from index.components.navbar import navbar
-from index.views.footer.footer import footer
-from index.views.header.header import header
-from index.views.hero.hero import hero
-from index.views.main.main import main
+
 import index.styles.styles as styles
 from index.styles.styles import Size as Size
-from index.styles.colors import Color
+from index.views.header.header import header
+from index.styles.colors import Color as Color
+from index.views.hero.hero import hero
 
 # class State(rx.State):
 #     pass
 
 
 def index() -> rx.Component:
-    return rx.chakra.vstack(
+    return rx.vstack(
         header(),
         hero(),
-        main(),
-        # rx.chakra.center(
-        #     rx.chakra.vstack(
+        # main(),
+        # rx.center(
+        #     rx.vstack(
         #         header(),
         #         max_width=styles.MAX_WIDTH,
         #         width="100%",
@@ -27,13 +25,18 @@ def index() -> rx.Component:
         #     ),
         # ),
         # footer(),
-        # background_color=Color.BACKGROUND.value,
+        background_color=Color.BACKGROUND.value,
+        style=styles.BASE_STYLE["body"],
     )
 
 
 app = rx.App(
     stylesheets=styles.STYLESHEETS,
     style=styles.BASE_STYLE,
+    theme=rx.theme(
+        appearance="dark",
+        has_background=True,
+    ),
 )
 app.add_page(
     index,

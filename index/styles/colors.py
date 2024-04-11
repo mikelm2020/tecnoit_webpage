@@ -23,5 +23,19 @@ class TextColor(Enum):
 
 class BackGroundColor(Enum):
     HERO = "#37517e"
-    HEADER = "rgba(40, 58, 90, 0.9)"
+    HEADER = "rgba(40, 58, 10, 0.9)"
     ROW = "black"
+
+
+class ElementColor(Enum):
+    A = "#47b2e4"
+    # A = "#3b3b3b"
+    HOVER = "#73c5eb"
+    PRELOADER = "#37517e"
+
+class DarkMode(Enum):
+    FIRST= "#000000"
+    SECOND= "#1d1d1d"
+    THIRD="#3b3b3b"
+    FOURTH="#585858"
+    FIFTH="#585858"

@@ -117,3 +117,4 @@ ANSWER_ITEM_11 = "Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id v
 # Contact
 CONTACT_TITLE = "Contacto"
 CONTACT_CONTENT = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+CONTACT_LOCATION = "Rodolfo Fierro 21 Cool. Francisco Villa, cp 09720"

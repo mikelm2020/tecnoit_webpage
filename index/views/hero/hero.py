@@ -1,65 +1,86 @@
 import reflex as rx
-from index.components.hero_image import hero_image
-import index.styles.styles as styles
+
 import index.constants as constants
+import index.styles.styles as styles
+from index.components.hero_image import hero_image
 
 
 def hero() -> rx.Component:
-    return rx.chakra.flex(
-        rx.chakra.hstack(
-            rx.chakra.flex(
-                rx.chakra.flex(
-                    rx.chakra.heading(
+    return rx.flex(
+        rx.hstack(
+            rx.flex(
+                rx.flex(
+                    rx.heading(
                         constants.HERO_TITLE,
                         as_="h1",
                         style=[
-                            styles.h1_style,
-                            styles.h1_hero_style,
+                            styles.BASE_STYLE["#hero h1"],
+                            styles.BASE_STYLE["h1,h2,h3,h4,h5,h6"],
                         ],
                     ),
-                    rx.chakra.heading(
+                    rx.heading(
                         constants.HERO_SUBTITLE,
+                        as_="h2",
                         style=[
-                            styles.h2_style,
-                            styles.h2_hero_style,
+                            styles.BASE_STYLE["#hero h2"],
+                            styles.BASE_STYLE["h1,h2,h3,h4,h5,h6"],
                         ],
                     ),
-                    style=[
-                        styles.col_style,
-                        styles.d_flex_style,
-                        styles.flex_column_style,
-                        styles.justify_content_center_style,
-                        styles.pt_4_style,
-                        styles.pt_style,
-                        styles.order_2_style,
-                        styles.order_1_style,
+                    rx.flex(
+                        rx.link(
+                            "Iniciar",
+                            href="#about",
+                            class_name=["btn-get-started", "scrollto"],
+                            style=styles.BASE_STYLE["#hero .btn-get-started"],
+                        ),
+                        class_name=[
+                            "d-flex",
+                            "justify-content-center",
+                            "justify-content-lg-start",
+                        ],
+                    ),
+                    class_name=[
+                        "col-lg-6",
+                        "d-flex",
+                        "flex-column",
+                        "justify-content-center",
+                        "pt-4",
+                        "pt-lg-0",
+                        "order-2",
+                        "order-lg-11",
+                        "aos-init",
+                        "aos-animate",
+                        "data-aos=fadeup",
+                        "data-aos-delay=200",
                     ],
                 ),
-                rx.chakra.hstack(
+                rx.vstack(
                     hero_image(
                         alt="imagen con computadoras que demuestran tecnología",
                         img="img/hero-img.png",
                     ),
-                    style=[
-                        styles.col_style,
-                        styles.order_1_style,
-                        styles.order_2_style,
-                        styles.aos_animate_style,
-                        styles.data_aos_zoom_in_style,
-                        styles.data_aos_delay_style,
+                    class_name=[
+                        "col-lg-6",
+                        "order-1",
+                        "order-lg-2",
+                        "hero-img",
+                        "aos-init",
+                        "aos-animate",
+                        "data-aos=zoomin",
+                        "data-aos-delay=200",
                     ],
                 ),
-                style=styles.row_style,
+                class_name="row",
             ),
-            style=[
-                styles.container_style,
-                styles.hero_container_style,
-            ],
+            class_name="container",
+            style=[styles.BASE_STYLE["#hero .container"]],
         ),
         style=[
-            styles.section_style,
-            styles.hero_style,
-            styles.d_flex_style,
-            styles.align_items_center_style,
+            styles.BASE_STYLE["#hero"],
+            styles.BASE_STYLE["section"],
+        ],
+        class_name=[
+            "d-flex",
+            "align-items-center",
         ],
     )

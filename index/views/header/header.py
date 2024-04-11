@@ -1,11 +1,11 @@
 import reflex as rx
-from index.components.logo import logo
-from index.styles.styles import Size as Size
-from index.components.navbar import navbar
-from index.styles.colors import TextColor as TextColor
-from index.styles.colors import Color as Color
-import index.constants as const
+
 import index.styles.styles as styles
+from index.components.logo import logo
+from index.components.navbar import navbar
+from index.styles.colors import Color as Color
+from index.styles.colors import TextColor as TextColor
+from index.styles.styles import Size as Size
 
 
 def header() -> rx.Component:
@@ -21,19 +21,33 @@ def header() -> rx.Component:
         A Reflex component that represents the header of the website.
 
     """
-    return rx.chakra.hstack(
-        rx.chakra.flex(
-            logo("Logo de la empresa Tecnoit", "logo.png", "http://localhost:3000/"),
-            rx.chakra.spacer(),
+    return rx.hstack(
+        rx.flex(
+            logo(
+                "Logo de la empresa Tecnoit",
+                "logo.png",
+                "http://localhost:3000/",
+            ),
+            # rx.spacer(),
             navbar(),
-            style=[
-                styles.container_style,
-                styles.d_flex_style,
-                styles.align_items_center_style,
+            class_name=[
+                "container",
+                "d-flex",
+                "align-items-center",
             ],
+            # style=[
+            #     styles.container_style,
+            #     styles.d_flex_style,
+            #     styles.align_items_center_style,
+            # ],
         ),
+        class_name="fixed-top",
         style=[
-            styles.header_style,
-            styles.fixed_top_style,
+            styles.BASE_STYLE["#header"],
+            styles.BASE_STYLE["#header.header-scrolled,#header.header-inner-pages"],
         ],
+        # style=[
+        #     styles.header_style,
+        #     styles.fixed_top_style,
+        # ],
     )

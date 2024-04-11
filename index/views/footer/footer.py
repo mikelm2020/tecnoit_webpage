@@ -1,25 +1,27 @@
-import reflex as rx
 import datetime
+
+import reflex as rx
+
 import index.constants as const
-from index.styles.styles import Size as Size
 from index.styles.colors import TextColor as TextColor
+from index.styles.styles import Size as Size
 
 
 def footer() -> rx.Component:
-    return rx.chakra.vstack(
-        rx.chakra.image(
+    return rx.vstack(
+        rx.image(
             src="logo.png",
             height=Size.VERY_BIG.value,
             weight=Size.VERY_BIG.value,
             alt='Logotipo de MoureDev. Una "eme" entre llaves.',
         ),
-        rx.chakra.link(
+        rx.link(
             f"© 2014-{datetime.date.today().year} MoureDev by Brais Moure v3.",
             href=const.MOUREDEV_URL,
             is_external=True,
             font_size=Size.MEDIUM.value,
         ),
-        rx.chakra.text(
+        rx.text(
             "BUILDING SOFTWARE WITH ♥ FROM GALICIA TO THE WORLD.",
             font_size=Size.MEDIUM.value,
             margin_top=Size.ZERO.value,
