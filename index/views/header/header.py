@@ -1,11 +1,11 @@
 import reflex as rx
 
-import index.styles.styles as styles
-from index.components.logo import logo
-from index.components.navbar import navbar
-from index.styles.colors import Color as Color
-from index.styles.colors import TextColor as TextColor
-from index.styles.styles import Size as Size
+# import index.styles.styles as styles
+# from index.components.logo import logo
+# from index.components.navbar import navbar
+# from index.styles.colors import Color as Color
+# from index.styles.colors import TextColor as TextColor
+# from index.styles.styles import Size as Size
 
 
 def header() -> rx.Component:
@@ -21,33 +21,40 @@ def header() -> rx.Component:
         A Reflex component that represents the header of the website.
 
     """
-    return rx.hstack(
-        rx.flex(
-            logo(
-                "Logo de la empresa Tecnoit",
-                "logo.png",
-                "http://localhost:3000/",
-            ),
-            # rx.spacer(),
-            navbar(),
-            class_name=[
-                "container",
-                "d-flex",
-                "align-items-center",
-            ],
-            # style=[
-            #     styles.container_style,
-            #     styles.d_flex_style,
-            #     styles.align_items_center_style,
-            # ],
+    return rx.vstack(
+        rx.box(
+            class_name="bg-slate-500",
         ),
-        class_name="fixed-top",
-        style=[
-            styles.BASE_STYLE["#header"],
-            styles.BASE_STYLE["#header.header-scrolled,#header.header-inner-pages"],
-        ],
-        # style=[
-        #     styles.header_style,
-        #     styles.fixed_top_style,
-        # ],
+        rx.box(),
+        rx.box(),
     )
+    # return rx.hstack(
+    #     rx.flex(
+    #         logo(
+    #             "Logo de la empresa Tecnoit",
+    #             "logo.png",
+    #             "http://localhost:3000/",
+    #         ),
+    #         # rx.spacer(),
+    #         navbar(),
+    #         class_name=[
+    #             "container",
+    #             "d-flex",
+    #             "align-items-center",
+    #         ],
+    #         # style=[
+    #         #     styles.container_style,
+    #         #     styles.d_flex_style,
+    #         #     styles.align_items_center_style,
+    #         # ],
+    #     ),
+    #     class_name="fixed-top",
+    #     style=[
+    #         styles.BASE_STYLE["#header"],
+    #         styles.BASE_STYLE["#header.header-scrolled,#header.header-inner-pages"],
+    #     ],
+    #     # style=[
+    #     #     styles.header_style,
+    #     #     styles.fixed_top_style,
+    #     # ],
+    # )

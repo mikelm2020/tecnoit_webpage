@@ -1,19 +1,19 @@
 import reflex as rx
 
-import index.styles.styles as styles
-from index.styles.styles import Size as Size
-from index.views.header.header import header
+import index.styles.styles as styles  # noqa: F401
 from index.styles.colors import Color as Color
-from index.views.hero.hero import hero
+from index.styles.styles import Size as Size
+from index.views.header.header import header  # noqa: F401
+from index.views.hero.hero import hero  # noqa: F401
 
 # class State(rx.State):
 #     pass
 
 
 def index() -> rx.Component:
-    return rx.vstack(
-        header(),
-        hero(),
+    return rx.box(
+        # header(),
+        # hero(),
         # main(),
         # rx.center(
         #     rx.vstack(
@@ -25,18 +25,20 @@ def index() -> rx.Component:
         #     ),
         # ),
         # footer(),
-        background_color=Color.BACKGROUND.value,
-        style=styles.BASE_STYLE["body"],
+        # background_color=Color.BACKGROUND.value,
+        # style=styles.BASE_STYLE["body"],
+        class_name=["leading-normal", "tracking-normal", "text-white,"],
+        style=styles.gradient,
     )
 
 
 app = rx.App(
-    stylesheets=styles.STYLESHEETS,
-    style=styles.BASE_STYLE,
-    theme=rx.theme(
-        appearance="dark",
-        has_background=True,
-    ),
+    # stylesheets=styles.STYLESHEETS,
+    # style=styles.BASE_STYLE,
+    # theme=rx.theme(
+    #     appearance="dark",
+    #     has_background=True,
+    # ),
 )
 app.add_page(
     index,

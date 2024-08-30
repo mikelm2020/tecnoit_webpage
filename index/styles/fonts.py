@@ -2,7 +2,7 @@ from enum import Enum
 
 
 class Font(Enum):
-    DEFAULT = ["Open Sans", "sans-serif"]
+    DEFAULT = ["Source Sans Pro", "sans-serif"]
     TIPOGRAPHY = ["Jost", "sans-serif"]
     TITLE = "Poppins"
     LOGO = "Comfortaa"
