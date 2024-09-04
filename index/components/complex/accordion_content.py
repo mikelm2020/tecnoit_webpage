@@ -4,7 +4,7 @@ import index.components.bold_paragraph as bold_paragraph
 import index.components.muted_text as muted_text
 
 
-def create_accordion_content(content_id, testimonial_text, author_info):
+def accordion_content(content_id, testimonial_text, author_info):
     """Creates the content for an accordion item with a testimonial and author info."""
     return rx.box(
         muted_text.muted_text(text_content=testimonial_text),
