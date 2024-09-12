@@ -23,7 +23,7 @@ def why_choose_us_section():
             ),
             feature_box.feature_box(
                 icon_alt_text="Success",
-                icon_tag="check-circle",
+                icon_tag="circle_check_big",
                 heading_text="98% Success Rate",
                 description_text="Proven track record of success",
             ),

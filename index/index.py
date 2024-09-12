@@ -1,34 +1,11 @@
 import reflex as rx
 
-import index.styles.styles as styles  # noqa: F401
-from index.styles.colors import Color as Color
-from index.styles.styles import Size as Size
-from index.views.header.header import header  # noqa: F401
-from index.views.hero.hero import hero  # noqa: F401
-
-# class State(rx.State):
-#     pass
+import index.layout.page_layout as page_layout
 
 
 def index() -> rx.Component:
     return rx.box(
-        # header(),
-        # hero(),
-        # main(),
-        # rx.center(
-        #     rx.vstack(
-        #         header(),
-        #         max_width=styles.MAX_WIDTH,
-        #         width="100%",
-        #         margin_y=Size.BIG.value,
-        #         padding=Size.BIG.value,
-        #     ),
-        # ),
-        # footer(),
-        # background_color=Color.BACKGROUND.value,
-        # style=styles.BASE_STYLE["body"],
-        class_name=["leading-normal", "tracking-normal", "text-white,"],
-        style=styles.gradient,
+        page_layout.page_layout(),
     )
 
 

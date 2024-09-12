@@ -1,7 +1,7 @@
 import reflex as rx
 
 
-def create_hero_background():
+def hero_background():
     """Creates the background image for the hero section."""
     return rx.box(
         rx.image(

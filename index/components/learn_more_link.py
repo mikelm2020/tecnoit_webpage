@@ -1,5 +1,7 @@
 import reflex as rx
 
+from index.styles.colors import DarkMode
+
 
 def learn_more_link(link_url):
     """Creates a 'Learn More' link with hover effects."""
@@ -9,5 +11,6 @@ def learn_more_link(link_url):
         href=link_url,
         font_weight="600",
         _hover={"color": "#2563EB"},
-        color="#3B82F6",
+        # color="3B82F6",
+        color=DarkMode.THIRD.value,
     )

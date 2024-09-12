@@ -1,7 +1,7 @@
 import reflex as rx
 
 import index.components.complex.accordion_button as accordion_button
-import index.components.complex.accordion_content as accordion_content
+import index.content.accordion_content as accordion_content
 
 
 def testimonials_accordion():

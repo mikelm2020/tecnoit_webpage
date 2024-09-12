@@ -4,6 +4,7 @@ import index.components.feature_description as feature_description
 import index.components.feature_heading as feature_heading
 import index.components.feature_icon as feature_icon
 import index.components.learn_more_link as learn_more_link
+from index.styles.colors import DarkMode
 
 
 def services_grid():
@@ -20,7 +21,8 @@ def services_grid():
             ),
             learn_more_link.learn_more_link(link_url="/services/strategic-planning"),
             class_name="dark:bg-gray-700",
-            background_color="#F3F4F6",
+            # background_color="F3F4F6",
+            background_color=DarkMode.SECOND.value,
             padding="1.5rem",
             border_radius="0.5rem",
         ),
@@ -37,21 +39,28 @@ def services_grid():
                 link_url="/services/performance-optimization"
             ),
             class_name="dark:bg-gray-700",
-            background_color="#F3F4F6",
+            # background_color="F3F4F6",
+            background_color=DarkMode.SECOND.value,
             padding="1.5rem",
             border_radius="0.5rem",
         ),
         rx.box(
-            feature_icon.feature_icon(icon_alt_text="Leadership", icon_tag="users"),
-            feature_heading.feature_heading(heading_text="Leadership Development"),
+            feature_icon.feature_icon(
+                icon_alt_text="Leadership",
+                icon_tag="users",
+            ),
+            feature_heading.feature_heading(
+                heading_text="Leadership Development",
+            ),
             feature_description.feature_description(
-                description_text="Nurture and empower your leaders to drive sustainable growth"
+                description_text="Nurture and empower your leaders to drive sustainable growth",
             ),
             learn_more_link.learn_more_link(
-                link_url="/services/leadership-development"
+                link_url="/services/leadership-development",
             ),
             class_name="dark:bg-gray-700",
-            background_color="#F3F4F6",
+            # background_color="F3F4F6",
+            background_color=DarkMode.SECOND.value,
             padding="1.5rem",
             border_radius="0.5rem",
         ),

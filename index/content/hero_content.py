@@ -4,7 +4,7 @@ import index.components.action_button as action_button
 import index.components.description_text as description_text
 
 
-def create_hero_content():
+def hero_content():
     """Creates the content for the hero section including heading, description, and call-to-action button."""
     return rx.box(
         rx.heading(

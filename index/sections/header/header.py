@@ -1,6 +1,7 @@
 import reflex as rx
 
 import index.components.complex.navigation_bar as navigation_bar
+from index.styles.colors import DarkMode
 
 
 def header():
@@ -26,6 +27,7 @@ def header():
             padding_bottom="0.75rem",
         ),
         class_name="dark:bg-gray-800",
-        background_color="#ffffff",
+        # background_color="ffffff",
+        background_color=DarkMode.FOURTH.value,
         box_shadow="0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
     )

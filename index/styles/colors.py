@@ -4,11 +4,14 @@ from enum import Enum
 class Color(Enum):
     PRIMARY = "#14A1F0"
     SECONDARY = "#087ec4"
-    BACKGROUND = "black"
+    # BACKGROUND = "black"
     # BACKGROUND = "#000"
     CONTENT = "#171F26"
     ICON = "#47b2e4"
     COLLAPSED = "#37517e"
+    HOVER = "#73c5eb"
+    # BACKGROUND = "37517e"
+    BACKGROUND = "#021526"
 
 
 class TextColor(Enum):
@@ -19,6 +22,7 @@ class TextColor(Enum):
     MENU_OPTION = "#FFF"
     TITLE = "#FFF"
     SUBTITLE = "rgba(255,255,255,0.6)"
+    MORE = "#F1F2F4"
 
 
 class BackGroundColor(Enum):
@@ -33,9 +37,10 @@ class ElementColor(Enum):
     HOVER = "#73c5eb"
     PRELOADER = "#37517e"
 
+
 class DarkMode(Enum):
-    FIRST= "#000000"
-    SECOND= "#1d1d1d"
-    THIRD="#3b3b3b"
-    FOURTH="#585858"
-    FIFTH="#585858"
+    FIRST = "#021526"
+    SECOND = "#03346E"
+    THIRD = "#6EACDA"
+    FOURTH = "#E2E2B6"
+    FIFTH = "#585858"

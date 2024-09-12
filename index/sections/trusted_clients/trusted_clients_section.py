@@ -1,24 +1,29 @@
 import reflex as rx
 
-import index.components.action_button as action_button
-import index.components.description_text as description_text
+import index.components.complex.client_logos_container as client_logos_container
+import index.components.complex.next_button as next_button
+import index.components.complex.previous_button as previous_button
 
 
-def cta_section():
-    """Creates a call-to-action section with heading, description, and button."""
+def trusted_clients_section():
+    """Create a section displaying trusted clients with a heading and logo carousel."""
     return rx.box(
         rx.heading(
-            "Ready to Transform Your Business?",
+            "Our Trusted Clients",
+            class_name="dark:text-white",
             font_weight="600",
-            margin_bottom="1rem",
+            margin_bottom="2rem",
             font_size="1.875rem",
             line_height="2.25rem",
+            text_align="center",
             as_="h2",
         ),
-        description_text.description_text(
-            description_content="Let's collaborate to unlock your organization's full potential"
+        rx.box(
+            client_logos_container.client_logos_container(),
+            previous_button.previous_button(),
+            next_button.next_button(),
+            position="relative",
         ),
-        action_button.action_button(button_text="Contact Us Today"),
         width="100%",
         style=rx.breakpoints(
             {
@@ -33,5 +38,4 @@ def cta_section():
         margin_right="auto",
         padding_left="1.5rem",
         padding_right="1.5rem",
-        text_align="center",
     )

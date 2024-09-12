@@ -1,16 +1,15 @@
 import reflex as rx
 
-import index.components.complex.services_grid as services_grid
-import index.components.main_heading as main_heading
-from index.styles.colors import Color
+import index.components.footer_copyright as footer_copyright
+import index.content.footer_content as footer_content
 
 
-def services_section():
-    """Creates the services section with a heading and grid of services."""
+def footer():
+    """Creates the complete footer section."""
     return rx.box(
         rx.box(
-            main_heading.main_heading(heading_text="Our Services"),
-            services_grid.services_grid(),
+            footer_content.footer_content(),
+            footer_copyright.footer_copyright(),
             width="100%",
             style=rx.breakpoints(
                 {
@@ -26,9 +25,9 @@ def services_section():
             padding_left="1.5rem",
             padding_right="1.5rem",
         ),
-        class_name="dark:bg-gray-800",
-        # background_color="#fffff",
-        background_color=Color.BACKGROUND.value,
-        padding_top="4rem",
-        padding_bottom="4rem",
+        class_name="dark:bg-gray-900",
+        background_color="#1F2937",
+        padding_top="2rem",
+        padding_bottom="2rem",
+        color="#ffffff",
     )
